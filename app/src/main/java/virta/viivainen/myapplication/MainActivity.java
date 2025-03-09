@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public void changeToGPD(View view) {
         String userEuros = userInput.getText().toString();
         float euros = Float.parseFloat(userEuros);
-        double result = euros / 0.83;
+        double result = euros * 0.83;
         String str = String.format("£%.2f" , result);
         textOutput.setText(str);
 
