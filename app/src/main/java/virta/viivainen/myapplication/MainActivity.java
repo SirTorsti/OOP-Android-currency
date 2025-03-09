@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeToUSD(View view) {
         String userEuros = userInput.getText().toString();
-        int euros = Integer.parseInt(userEuros);
+        float euros = Float.parseFloat(userEuros);
         double result = euros * 1.05;
         String str = String.format("$%.2f" , result);
         textOutput.setText(str);
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeToGPD(View view) {
         String userEuros = userInput.getText().toString();
-        int euros = Integer.parseInt(userEuros);
+        float euros = Float.parseFloat(userEuros);
         double result = euros / 0.83;
         String str = String.format("£%.2f" , result);
         textOutput.setText(str);
